@@ -448,19 +448,6 @@ article.featured {
   gap: 16px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .details {
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    background-color: white;
-    color: #e05304;
-    width: 90%;
-    position: relative;
-    gap: 16px;
-  }
-}
-
 .details > * {
   padding: 0;
   margin: 0;
@@ -941,6 +928,49 @@ textarea {
     color: black;
     height: 70px;
     align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: white;
+    color: #e05304;
+    width: 90%;
+    position: relative;
+    gap: 16px;
+  }
+
+  .nav-links-rw,
+  .nav-links-am,
+  .nav-links-cm {
+    display: block;
+    color: rgb(255, 245, 225);
+    padding: 10px;
+    border-bottom: 1px solid rgb(111, 108, 107);
+    font-size: 22px;
+    line-height: 34px;
+    text-decoration: none;
+    width: 360px;
+  }
+
+  .x-button {
+    display: block;
+    text-align: right;
+    font-size: 24px;
+    color: #6f6c6b;
+    width: 350px;
+    padding-top: 1rem;
+  }
+
+  .fa-close::before,
+  .fa-multiply::before,
+  .fa-remove::before,
+  .fa-times::before,
+  .fa-xmark::before {
+    content: '\f00d';
   }
 }
 
